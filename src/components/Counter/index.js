@@ -3,20 +3,22 @@ import React from 'react';
 import { number } from 'prop-types';
 
 //Instruments
-import Styles from './styles';
+import Styles from './styles.scss';
 
-const Counter = () => (
-    <section className = { Styles.counter }>Post count: 9
-        <img className = { Styles.img } />
-    </section>
-);
+const Counter = (props) => {
+    const { counter } = props;
 
-// Counter.propTypes = {
-//     count: number.isRequired
-// };
-//
-// Counter:defaultProps = {
-//     count: 0
-// };
+    return (<section className = { Styles.counter }>
+        Post count: {counter}
+    </section>);
+};
+
+Counter.propTypes = {
+    count: number.isRequired
+};
+
+Counter.defaultProps = {
+    count: 0
+};
 
 export default Counter;

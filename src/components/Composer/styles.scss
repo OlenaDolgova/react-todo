@@ -45,7 +45,9 @@
     font-size: 12px;
     letter-spacing: 1px;
     cursor: pointer;
-    //:hover  {}  background-color: #365899;
+    &:hover  {
+      background-color: rebeccapurple;
+    }
   }
 
   .text {
