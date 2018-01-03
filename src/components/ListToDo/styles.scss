@@ -1,0 +1,116 @@
+@import '../../theme/palette';
+.List {
+  margin-top: 70px;
+  width: 550px;
+}
+
+.listtodo {
+  border-collapse: collapse;
+  border: 3px solid $paletteColor16;
+  font-family: "Lucida Grande", sans-serif;
+  box-shadow: inset 0 0 6px;
+}
+.listtodo caption {
+  background: $paletteColor16;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px  4px 0 $rgbaColor1;
+  color: white;
+  font-family: "Roboto Slab",serif;
+  font-style: normal;
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+}
+td, th {
+  padding: 10px;
+  color: $paletteColor4;
+}
+
+th {
+  text-align: left;
+  font-size: 18px;
+  background: $rgbaColor1;
+
+}
+tr:nth-child(2n) {
+  background: $rgbaColor1;
+}
+td:last-of-type {
+  text-align: left;
+}
+a {
+  display: inline-block;
+  padding: 5px 10px;
+  background: $paletteColor16;
+  box-shadow: 2px 2px 0 0 $paletteColor14;
+  position: relative;
+}
+a:hover {
+  box-shadow: none;
+  top: 2px;
+  left: 2px;
+}
+
+button {
+  border-radius: 3px;
+  color: $paletteColor4;
+
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px;
+    font-weight: 600;
+  }
+  &:active {
+    background: $paletteColor16;
+    box-shadow: 0 3px $rgbaColor1 inset;
+  }
+}
+
+form {
+  margin: 20px;
+  box-shadow: 0.4em 0.4em 5px $rgbaColor1;
+  width: 430px;
+}
+
+.header {
+  display:inline-block;
+  position:relative;
+}
+
+.addTextInput {
+  width: 84%;
+  padding: 12px 15px;
+  margin: 3px 0;
+  box-sizing: border-box;
+  &:focus {
+    font-weight: 600;
+  }
+}
+
+.addTextButton {
+  padding: 12px 15px;
+  margin: 3px 0;
+  box-sizing: border-box;
+}
+
+.warningMessages {
+  color: $paletteColor15;
+  font-style: italic;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.data {
+  word-break: break-all;
+  width: 300px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px;
+    font-weight: 600;
+
+  }
+}

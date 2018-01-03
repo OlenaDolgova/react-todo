@@ -1,11 +1,33 @@
+// HEX
 $paletteColor1: #000;
-$paletteColor2: #FFF;
-$paletteColor3: #E9EBEE;
-$paletteColor4: #808080;
-$paletteColor5: #90949C;
-$paletteColor6: #4267B2;
-$paletteColor7: #365899;
-$paletteColor8: #282828;
-$paletteColor9: #616770;
-$paletteColor10: #E1E2E3;
-$paletteColor11: #F6F7F9;
+$paletteColor2: #fff;
+$paletteColor3: #f6f7f9;
+$paletteColor4: #4267b2;
+$paletteColor5: #1d2a5b;
+$paletteColor6: #6b84fc;
+$paletteColor7: #79bc64;
+$paletteColor8: #578843;
+$paletteColor9: #d4c5a0;
+$paletteColor10: #ffdbb2;
+$paletteColor11: #ffd6a8;
+$paletteColor12: #794932;
+$paletteColor13: #4f200a;
+$paletteColor14: #f3f832;
+$paletteColor15: #f40009;
+$paletteColor16: #8d99b1;
+
+// RGBA
+$rgbaColor1: rgba(0, 0, 0, 0.1);
+$rgbaColor2: rgba(0, 0, 0, 0.2);
+
+// Gradients
+$gradient1: linear-gradient($paletteColor7, $paletteColor8);
+$gradient2: linear-gradient($paletteColor12, $paletteColor13);
+
+// Maps
+$colorMap1: (
+        1: $paletteColor7,
+        2: $paletteColor8,
+        3: $paletteColor12,
+        4: $paletteColor13
+);

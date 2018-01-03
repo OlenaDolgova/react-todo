@@ -1,0 +1,49 @@
+@import '../../theme/palette';
+
+.relax {
+  position: fixed;
+  top: 20px;
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-around;
+  align-items: baseline;
+
+  .ball {
+    width: 40px;
+    height: 40px;
+    background-color: $paletteColor5;
+    border-radius: 50%;  }
+}
+
+.initialAppearStart {
+  opacity: 0.01;
+  transform: translateY(-50px) scale(6);
+}
+
+.initialAppearEnd {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 2500ms ease-in, transform 2500ms ease-in;
+}
+
+.inStart {
+  opacity: 0.01;
+  transform: translateX(-1000px) scale(2);
+}
+
+.inEnd {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition: opacity 5000ms ease-in, transform 5000ms ease-in;
+}
+
+.outStart {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.outEnd {
+  opacity: 0.01;
+  transform: translateX(1000px) scale(2);
+  transition: opacity 5000ms ease-out, transform 5000ms ease-out;
+}
